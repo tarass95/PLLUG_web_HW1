@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>HTML form</title>
+</head>
+<body>
+	<header>Simple html form<hr></header>
+	<main>
+		<h1>Simple html form</h1>
+
+		<form action="/action_page.php">
+			Enter your name:
+			<input name="firstname" type="text">
+			<br><br>
+			Enter your login:
+			<input type="text" name="userid">
+			<br><br>
+			Enter your password: 
+			<input type="password" name="psw">
+			<br><br>
+			Select your gender:
+			<select name="sex">
+				<option value="male">Male</option>
+				<option value="female">Female</option>
+			</select>
+			<br><br>
+			Select your gender:<br>
+			<input type="radio" name="gender" value="male" checked> Male<br>
+			<input type="radio" name="gender" value="female"> Female<br>
+			<input type="radio" name="gender" value="other"> Other
+			<br><br>
+			Select a position:
+			<select name="job" size="4">
+				<option value="js" selected>JS developer</option>
+				<option value="java">PHP developer</option>
+				<option value="java">Java developer</option>
+				<option value="java">.NET developer</option>
+				<option value="QA">QA ingeneer</option>
+			</select>
+			<br><br>
+			<textarea name="message" rows="10" cols="40">Write a short story about yourself here.</textarea>
+			<br><br>
+			
+			Datalist element:
+			<input list="skills" name="browser">
+			<datalist id="skills">
+				<option value="HTML">
+				<option value="CSS">
+				<option value="JavaScript">
+				<option value="Angular JS">
+				<option value="React JS">
+    		</datalist>
+    		<br><br>
+			<input type="submit">
+			<br><br>
+			<input type="reset">
+			<br><br>
+
+			What skills do you have?<br>
+			<input type="checkbox" name="skill1" value="html">HTML<br>
+			<input type="checkbox" name="skill2" value="css">CSS<br>
+			<input type="checkbox" name="skill3" value="js">JavaScript<br>
+			<input type="checkbox" name="skill4" value="angular">Angular JS<br>
+			<input type="checkbox" name="skill5" value="react">React js<br>
+			<br><br>
+
+			<input type="button" onclick="alert('Yo, yo, yo, 148-3369')" value="Click Me!">
+			<br><br>
+			Select your favorite color:
+			<input type="color" name="favcolor">
+			<br><br>
+			When you were born?
+			<input type="date" name="bday">
+			<br><br>
+			<input type="submit">
+			Enter your E-mail, please:
+			<input type="email" name="email">
+			Pick a number between 0 and 15
+			<input type="range" name="points" min="0" max="15">
+			<br><br>
+			Search Google:
+			<input type="search" name="googlesearch">
+			<br><br>		
+		</form>
+
+	</main>
+	<footer><hr>Coded by tarass95.</footer>
+</body>
+</html>
